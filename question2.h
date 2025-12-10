@@ -5,4 +5,7 @@
 #ifndef ENSEASH_QUESTION2_H
 #define ENSEASH_QUESTION2_H
 
+#define MAX_LINE_SIZE 512
+
+int executeOneCommand();
 #endif //ENSEASH_QUESTION2_H
