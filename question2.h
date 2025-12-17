@@ -7,5 +7,5 @@
 
 #define MAX_LINE_SIZE 512
 
-int executeOneCommand();
+int executeOneCommand(long *execute_time);
 #endif //ENSEASH_QUESTION2_H

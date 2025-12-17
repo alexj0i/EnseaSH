@@ -5,4 +5,7 @@
 #ifndef ENSEASH_QUESTION6_H
 #define ENSEASH_QUESTION6_H
 
+int executeOneCommandComplexe(long *execute_time);
+
+
 #endif //ENSEASH_QUESTION6_H
