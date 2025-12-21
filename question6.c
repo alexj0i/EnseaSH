@@ -11,6 +11,16 @@
 
 #define MAX_ARGS 64
 
+/*
+ * La fonction int executeOneCommandComplexe(long *execute_time)
+ * Lit une commande saisie par l’utilisateur et permet l’exécution de commandes
+ * contenant des arguments.
+ * La ligne de commande est découpée en plusieurs éléments afin de former
+ * le tableau d’arguments nécessaire à l’exécution du programme.
+ * La fonction exécute ensuite la commande, attend sa fin et mesure son temps d’exécution.
+*/
+
+
 int executeOneCommandComplexe(long *execute_time){
 
     int status;
@@ -22,7 +32,7 @@ int executeOneCommandComplexe(long *execute_time){
 
     if (numberCharRead == 0){
         exitShell();
-    }else if (numberCharRead < 0){
+    } else if (numberCharRead < 0){
         return 0;
     }
 
