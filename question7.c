@@ -13,13 +13,13 @@
 #define MAX_ARGS 64
 
 /*
- * La fonction int executeOneCommandComplexeWithRedirection(long *execute_time)
- * Lit une commande saisie par l’utilisateur et permet l’exécution de commandes
- * avec redirection des flux d’entrée et/ou de sortie.
- * La fonction analyse la ligne de commande afin d’identifier les fichiers
- * utilisés pour les redirections "<" et ">".
- * La commande est ensuite exécutée dans un processus fils avec les redirections
- * appliquées, puis le shell récupère le statut de fin et le temps d’exécution.
+ * The function int executeOneCommandComplexeWithRedirection(long *execute_time)
+ * Reads a command entered by the user and allows execution of commands
+ * with input and/or output redirection.
+ * The function parses the command line to identify files
+ * used for "<" and ">" redirections.
+ * The command is then executed in a child process with the redirections applied,
+ * and the shell retrieves the exit status and execution time.
  */
 
 int executeOneCommandComplexeWithRedirection(long *execute_time){
