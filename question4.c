@@ -7,12 +7,11 @@
 #include "question5.h"
 
 /*
- * La fonction void augmentedPrompt(int status,long time_ms)
- * Construit et affiche le prompt du shell après l’exécution d’une commande.
- * Le prompt permet à l’utilisateur de connaître le résultat de la dernière commande,
- * en indiquant si elle s’est terminée correctement ou suite à un signal,
- * ainsi que le temps mis pour son exécution.
-*/
+ * The function void augmentedPrompt(int status, long time_ms)
+ * Constructs and displays the shell prompt after a command execution.
+ * The prompt shows the result of the last command, indicating whether it
+ * finished normally or was terminated by a signal, and its execution time.
+ */
 
 void augmentedPrompt(int status,long time_ms){
     char buffer[64] = {0};
