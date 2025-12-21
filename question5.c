@@ -9,11 +9,11 @@
 
 static long last_execution_time_ms = 0;
 
-/* La fonction struct timespec StartTime()
- * Récupère et retourne l’instant de départ avant l’exécution d’une commande.
- * Cette fonction est utilisée pour pouvoir mesurer la durée d’exécution
- * d’un programme lancé par le shell.
-*/
+/*
+ * The function struct timespec StartTime()
+ * Retrieves and returns the starting time before a command execution.
+ * This function is used to measure the duration of a program launched by the shell.
+ */
 
 struct timespec StartTime() {
     struct timespec start;
@@ -22,9 +22,9 @@ struct timespec StartTime() {
 }
 
 /*
- * La fonction void StopTime(struct timespec start)
- * Calcule le temps d’exécution écoulé depuis l’instant de départ.
- * La durée est convertie en millisecondes et stockée dans une variable statique.
+ * The function void StopTime(struct timespec start)
+ * Calculates the elapsed execution time since the starting time.
+ * The duration is converted to milliseconds and stored in a static variable.
  */
 
 void StopTime(struct timespec start) {
@@ -34,9 +34,9 @@ void StopTime(struct timespec start) {
 }
 
 /*
- * La fonction long GetLastExecutionTime()
- * Retourne le temps d’exécution de la dernière commande lancée par le shell.
- * Cette valeur est utilisée lors de l’affichage du prompt enrichi.
+ * The function long GetLastExecutionTime()
+ * Returns the execution time of the last command run by the shell.
+ * This value is used when displaying the enriched prompt.
  */
 
 long GetLastExecutionTime() {
