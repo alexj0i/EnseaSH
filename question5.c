@@ -40,6 +40,5 @@ void StopTime(struct timespec start) {
  */
 
 long GetLastExecutionTime() {
-    //printf("%d",last_execution_time_ms);
     return last_execution_time_ms;
 }
