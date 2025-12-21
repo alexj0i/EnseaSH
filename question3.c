@@ -5,21 +5,21 @@
 #include "question3.h"
 
 /*
- * La fonction exitCommandCheck(const char *cmd)
- * Vérifie si la commande saisie par l’utilisateur correspond à la commande "exit".
- * Cette fonction permet d’identifier une demande explicite de sortie du shell.
-*/
+ * The function exitCommandCheck(const char *cmd)
+ * Checks if the user-entered command matches the "exit" command.
+ * This function allows identifying an explicit request to exit the shell.
+ */
 
 int exitCommandCheck(const char *cmd){
     return strcmp(cmd, EXIT) == 0;
 }
 
 /*
- * La fonction void exitShell(void)
- * Termine proprement l’exécution du shell.
- * Un message de sortie est affiché avant l’arrêt du programme.
- * Cette fonction est appelée lorsque l’utilisateur tape "exit"
- * ou lorsqu’il signale la fin de la saisie avec Ctrl + D.
+ * The function void exitShell(void)
+ * Properly terminates the shell execution.
+ * A goodbye message is displayed before the program exits.
+ * This function is called when the user types "exit"
+ * or signals end-of-input with Ctrl + D.
  */
 
 void exitShell(void) {
