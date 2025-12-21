@@ -10,9 +10,9 @@
 #define PROMPT_MESSAGE "enseash % "
 
 /*
- * La fontion welcomePrompt()
- * Affiche le message d’accueil du shell lors de son lancement.
- * L’affichage est réalisé avec write afin de respecter les contraintes du projet.
+ * The function welcomePrompt()
+ * Displays the shell welcome message when it starts.
+ * The output is done using write() to comply with project constraints.
 */
 
 void welcomePrompt(){
@@ -20,10 +20,10 @@ void welcomePrompt(){
 }
 
 /*
- * La fonction regularPrompt()
- * Affiche le prompt simple du shell pour inviter l’utilisateur à saisir une commande.
- * En cas d’erreur lors de l’écriture sur la sortie standard, le programme est arrêté.
-*/
+ * The function regularPrompt()
+ * Displays the simple shell prompt to invite the user to enter a command.
+ * If an error occurs while writing to the standard output, the program exits.
+ */
 
 void regularPrompt(){
     int status = write(STDOUT_FILENO,PROMPT_MESSAGE,strlen(PROMPT_MESSAGE));
