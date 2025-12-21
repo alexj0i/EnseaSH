@@ -87,6 +87,10 @@ write(STDOUT_FILENO, PROMPT_MESSAGE, strlen(PROMPT_MESSAGE));
 
 * En cas d’erreur d’écriture, `regularPrompt()` appelle `exit(EXIT_FAILURE)`.
 
+### Affichage 
+
+![Affichage du message d’accueil](pictures/question1.png)
+
 ### Remarques
 
 L’utilisation de `write()` garantit un comportement cohérent avec les lectures faites par `read()` et évite les problèmes de buffering liés à `printf()`.
@@ -132,6 +136,9 @@ if (fork() == 0){
 }
 wait(&status);
 ```
+### Affichage
+
+![Exécution d’une commande simple](pictures/question2.png)
 
 ### Remarques
 
@@ -159,6 +166,9 @@ write(STDOUT_FILENO, EXIT_BYEBYE, strlen(EXIT_BYEBYE));
 exit(EXIT_SUCCESS);
 ```
 
+### Affichage 
+
+![Affichage du message d’accueil](pictures/question3.png)
 
 ---
 
@@ -186,12 +196,9 @@ write(STDOUT_FILENO, buffer, strlen(buffer));
 
 * Les macros POSIX `WIFEXITED`, `WEXITSTATUS`, `WIFSIGNALED`, `WTERMSIG` sont utilisées pour interpréter `status` retourné par `wait()`.
 
-### Affichage
+### Affichage 
 
-```sh
-enseash % ls
-enseash [exit:0|1ms] %:
-```
+![Affichage du message d’accueil](pictures/question4.png)
 
 ---
 
@@ -215,6 +222,10 @@ last_execution_time_ms = (end.tv_sec - start.tv_sec)*1000 + (end.tv_nsec - start
 ```
 
 * `GetLastExecutionTime()` retourne `last_execution_time_ms`.
+
+### Affichage 
+
+![Affichage du message d’accueil](pictures/question5.png)
 
 ### Remarques
 
@@ -257,13 +268,9 @@ if (fork() == 0) {
 }
 wait(&status);
 ```
-### Affichage
+### Affichage 
 
-```
-enseash % hostname -i
-127.0.0.1
-```
-
+![Affichage du message d’accueil](pictures/question6.png)
 
 ---
 
@@ -304,16 +311,7 @@ execvp(argv[0], argv);
 
 ### Affichage
 
-```sh
-enseash % ls > filelist.txt
-enseash [exit:0|1ms] %
-```
-
-```sh
-enseash % wc -l < filelist.txt
-7
-enseash [exit:0|12ms] %
-```
+![Affichage du message d’accueil](pictures/question7.png)
 
 ---
 
