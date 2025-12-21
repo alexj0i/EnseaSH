@@ -16,8 +16,6 @@ int main(void){
     regularPrompt();
     while (1){
         augmentedPrompt(status,GetLastExecutionTime());
-        //status = executeOneCommand(&execute_time);
-        //status = executeOneCommandComplexe(&execute_time);
         status = executeOneCommandComplexeWithRedirection(&execute_time);
     }
     return EXIT_SUCCESS;
